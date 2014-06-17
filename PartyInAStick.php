@@ -14,7 +14,6 @@ $this->api = $api;
 }
 public function init() {
 $this->api->addHandler("player.action", array($this, "eventHandle"), 50);
-$this->api->addHandler("player.equipment.change", array($this, "eventHandler"), 50);
 }
 public function eventHandle($data, $event) {
 switch ($event) {
