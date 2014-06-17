@@ -22,7 +22,9 @@ case "player.action":
 $player = $data["player"];
 $item = $player->getSlot($player->slot);
 if($item->getid()==341){
-$this->api->entity->dropItem("264")
+$player->entity->dropItem("264")
 }
 }
+}
+public function __destruct() {}
 }
