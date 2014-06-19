@@ -5,9 +5,9 @@ name=TOspawn
 version=1.0
 apiversion=12
 author=Jerlegoman
-class=spaplus
+class=Magic
 */
-class spaplus implements Plugin {
+class Magic implements Plugin {
 private $api;
 public function __construct(ServerAPI $api,$server = false) {
 $this->api = $api;
@@ -20,7 +20,7 @@ switch ($event) {
 case "player.action":
 $player = $data["player"];
 $item = $player->getSlot($player->slot);
-if($item->getid()==341){
+if($item->getid()==344){
 $player->entity->dropItem("264")
 }
 }
